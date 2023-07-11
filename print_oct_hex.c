@@ -18,7 +18,7 @@ int print_octal(va_list arg)
 	if (num == 0)
 		return (_putchar('0'));
 
-	while (num_copy != 0);
+	while (num_copy != 0)
 	{
 		num_copy /= 8;
 		num_digits++;
