@@ -121,7 +121,7 @@ int print_str(va_list arg)
  */
 int print_percent(va_list arg)
 {
-	int length = 2;
+	int length = 1;
 	(void)arg;
 	_putchar('%');
 	return (length);
