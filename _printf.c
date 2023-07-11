@@ -20,7 +20,7 @@ static int (*get_spec_func(char spec))(va_list)
 		{'u', print_unsigned},
 		{'o', print_octal},
 		{'x', print_hex},
-		{"X", print_HEX},
+		{'X', print_HEX},
 		{'\0', NULL}
 	};
 
@@ -83,7 +83,20 @@ int _printf(const char *format, ...)
 
 /**
  * print_char - function to print a char
- * @arg: A va_list containing the next argument of type char *
+ * @arg: A va_list containing the next argument of type char
+ * 
+ * Return: the number of characters printed
+ */
+int print_char(va_list arg)
+{
+	char c = va_arg(arg, int);
+
+	return (_putchar(c));
+}
+
+/**
+ * print_str - function to print a string
+ * @arg: a va_list containing the next argument type of char *
  *
  * Return: the number of characters printed
  */
