@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * get_spec_func - Finds the appropriate print function for
- * a given specifier.
+ * get_spec_func - Finds the appropriate print function for a given specifier.
  *
  * @spec: Specifier to find a print function for.
  *
- * Return to the print function correspoding to @spec, or NULL
+ * Return: Pointer to the print function correspoding to @spec, or NULL
  * function does not exists.
  */
 static int (*get_spec_func(char spec))(va_list)
