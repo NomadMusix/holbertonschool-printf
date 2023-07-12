@@ -114,10 +114,10 @@ int print_str(va_list arg)
 }
 
 /**
- * print_percent - function that prints a percent symbol
- * @arg: A va_list containing no argument
+ * print_percent - a function to print a percent symbol
+ * @arg: a va_list containing no argument
  *
- * Return: the number of characters printed.
+ * Return: number of characters printed
  */
 int print_percent(va_list arg)
 {
