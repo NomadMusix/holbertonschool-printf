@@ -24,7 +24,7 @@ int print_unsigned(va_list arg)
 		num_digits++;
 	}
 
-	for (i = 1; i < num digits; i++)
+	for (i = 1; i < num_digits; i++)
 		divisor *= 10;
 
 											while (divisor != 0)
