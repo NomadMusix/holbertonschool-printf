@@ -1,19 +1,19 @@
-man file for printf project:
+man file for printf assignment:
 
-_printf is a custom printf function that can be used to print a custom function.
+_printf is a custom function that can be used to print a formatted output.
 
-%c prints character
-%s prints string
-%d prints a decimal number
-%i prints a integer
-%o prints an octal number
-%x prits a hexadecimal number
-%X prints a hexadecimal number in uppercase
+c: Print a character
+-s: Print a string
+-d: Print a decimal number
+-i: Print an integer
+-o: Print an octal number
+-x: Print a hexadecimal number
+-X: Print a hexadecimal number in uppercase
 
--c prints character
--s prints a string
--d prints a decimal number
--i prints an integer
--o prints an octal number
--x prints a hexadecimal number
--X prints a hexadecimal number in uppercase
+%c: Print a character
+%s: Print a string
+%d: Print a decimal number
+%i: Print an integer
+%o: Print an octal number
+%x: Print a hexadecimal number
+%X: Print a hexadecimal number in uppercase
