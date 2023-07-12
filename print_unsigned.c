@@ -1,5 +1,40 @@
 #include "main.h"
 
 /**
- * untouched print
+ * print_unsigned - prints an unsigned integer.
+ * @arg: the argument to print.
+ *
+ * Return: number of characters printed
  */
+int print_unsigned(va_list arg)
+{
+	unsigned int num = va_arg(arg, unsigned int);
+	int count = 0;
+	unsigned int num_copy = num;
+	int num_digits = 0;
+	unsigned int divisor = 1;
+	int i;
+
+	if (num == 0)
+		return (_putchar('0'));
+
+	while(num_copy != 0)
+	{
+												num_copy /= 10;
+		num_digits++;
+	}
+
+	for (i = 1; i < num digits; i++)
+		divisor *= 10;
+
+											while (divisor != 0)
+	{
+		int digit = num / divisor;
+
+												count += _putchar(digit + '0');
+
+												num -= digit * divisor;
+																					}
+
+											return (count);
+}
