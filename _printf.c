@@ -121,8 +121,19 @@ int print_str(va_list arg)
  */
 int print_percent(va_list arg)
 {
-	int length = 1;
-	(void)arg;
-	_putchar('%');
+	int length = 1, i;
+
+	const char *format = va_arg(arg, const char *);
+
+	if (format[i] == '%' && format[i + 1] == '\0')
+	{
+		_putchar('%');
+		length++;
+	}
+	else
+	{
+		_putchar('%');
+	}
+
 	return (length);
 }
