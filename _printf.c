@@ -121,7 +121,7 @@ int print_str(va_list arg)
  */
 int print_percent(va_list arg)
 {
-	int length = 1, i;
+	int length = 1, i = 0;
 
 	const char *format = va_arg(arg, const char *);
 
