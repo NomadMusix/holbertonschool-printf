@@ -9,10 +9,8 @@
 int main(void)
 {
 	int len1, len2;
-	printf("Our printf:\n");
 	len1 = _printf("%");
 	printf("\n\n");
-	printf("Real printf:\n");
 	len2 = printf("%");
 	printf("\n%d\n%d\n", len1, len2);
 	return (0);
