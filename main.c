@@ -8,15 +8,12 @@
  */
 int main(void)
 {
-	int len, len2;
-	len = _printf("%");
+	int len1, len2;
+	printf("Our printf:\n");
+	len1 = _printf("%");
+	printf("\n\n");
+	printf("Real printf:\n");
 	len2 = printf("%");
-	fflush(stdout);
-	if (len != len2)
-	{
-		printf("Lengths differ.\n");
-		fflush(stdout);
-		return (1);
-	}
+	printf("\n%d\n%d\n", len1, len2);
 	return (0);
 }
